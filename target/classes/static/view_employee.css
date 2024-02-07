@@ -1,0 +1,97 @@
+/* Style de la liste des employés */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style du formulaire */
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Style du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+/* Style de la liste des utilisateurs */
+.user-list {
+    max-height: 0;
+    overflow: hidden;
+    width:100%;
+    transition: max-height 0.2s ease-out;
+    background-color: white; /* Fond blanc pour la lisibilité */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+}
+
+/* Style du bouton d'accordéon */
+.accordion-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%; /* Remplir toute la largeur */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+/* Style de la liste des utilisateurs lorsque déroulée */
+.accordion-button.active + .user-list {
+    max-height: 200px; /* Réglez la hauteur souhaitée ici */
+}
+
+#accordion {
+    max-width:200px;
+    top:20px;
+    right:0px;
+}
